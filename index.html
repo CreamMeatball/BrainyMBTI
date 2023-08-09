@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CreamMeatball">
+    <meta name="keywords" content="BrainyMBTI">
+    <meta name="description" content="The Brainy MBTI">
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://brainymbti/netlify.app" />
+    <meta property="og:title" content="브레이니 MBTI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/shareImg.png" />
+    <meta property="og:description" content="내 브레이니 성향은 무엇일까?" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+
+    <title>TBTI - 더 브레이니 성향 검사</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.3.0/kakao.min.js"
+        integrity="sha384-70k0rrouSYPWJt7q9rSTKpiTfX6USlMYjZUtr1Du+9o4cGvhPAWxngdtVZDdErlh" crossorigin="anonymous">
+    </script>
+    <script>
+        Kakao.init('d826499f6cf9c31a3d66cb240afdc666'); // 사용하려는 앱의 JavaScript 키 입력
+    </script>
+</head>
+
+
+<body>
+    <div id="title" class="mx-auto">
+        <img src="./img/home.png" id="homeLogo" alt="mainImage" class="img-fluid" style="float: left; margin-left: 20px;"
+        onclick="home()">
+        <h4>TBTI - 더 브레이니 성향 검사</h4>
+    </div>
+    <div class="container">
+        <section id="main" class="mx-auto my-5 pb-5 pt-5 px-3">
+            <h2 class="pt-5 pb-2"><b>나의 브레이니 성향은?</b></h2>
+            <div class="col-lg-6 col-md-8 col-sm-10 col- mx-auto">
+                <img src="./img/main.png" alt="mainImage" class="img-fluid" width="50%">
+            </div>
+            <p class="pt-4">
+                배신이냐, 아니냐.. 그것이 문제로다!
+                <br>
+                과연 내 TBTI는 무엇일까?
+            </p>
+            <!-- <p class="pt-4" style="font-size: 12px; color: gray;">
+                제작 : 더 브레이니 Season2 5기 박철현
+                <br>
+                아이디어 : 더 브레이니 Season2 1기 김경린
+            </p> -->
+            <button type="button" id="beginButton" class="py-2 px-3 mt-3" onclick="js:begin()"><b>시작하기</b></button>
+        </section>
+        <section id="qna" class="mt-4 pt-4">
+            <div class="status mx-auto">
+                <div class="statusBar">
+
+                </div>
+            </div>
+            <div class="qBoxNum mt-4 pl-4 pr-5">
+                <p style="font-size: 20px;">1</p>
+            </div>
+            <div class="qBox mb-4 py-3 mx-auto px-4">
+            </div>
+            <div class="answerBox mt-4 pt-3">
+
+            </div>
+        </section>
+        <section id="result" class="mx-auto my-5 py-5 px-3">
+            <h3 class="pt-5"><b>당신의 브레이니 MBTI는?</b></h2>
+            <div class="resultname">
+
+            </div>
+            <div id="resultImg" class="img-fluid my-3 col-lg-6 col-md-8 col-sm-10 col- mx-auto" width="50%">
+                
+            </div>
+            <div class="resultDesc">
+
+            </div>
+            <button type="button" class="kakao mt-4 py-3 px-5" style="font-size: 20px;" onclick="js:setShare()"><b>공유하기</b></button>
+        </section>
+        <div class="bottomBar mx-auto">
+            <div id="bottomBar1"><p style="font-size: 12px;">[TBTI - The Brainy Type Indicator] 더 브레이니 성향 검사</p></div>
+            <div id="bottomBar2"><p style="font-size: 12px;">기획: 1기 김경린 / 개발: 5기 박철현 / 디자인: 1기 이준호</p></div>
+        </div>
+        <script src="./js/data.js" charset="utf-8"></script>
+        <script src="./js/start.js" charset="utf-8"></script>
+        <script src="./js/share.js" charset="utf-8"></script>
+    </div>
+</body>
+
+</html>

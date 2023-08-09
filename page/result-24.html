@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CreamMeatball">
+    <meta name="keywords" content="BrainyMBTI">
+    <meta name="description" content="The Brainy MBTI">
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://brainymbti/netlify.app" />
+    <meta property="og:title" content="브레이니 MBTI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../img/shareImg.png" />
+    <meta property="og:description" content="내 브레이니 성향은 무엇일까?" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../img/favicon.ico" />
+
+    <title>브레이니 MBTI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <section id="shareResult" class="mx-auto my-5 py-5 px-3">
+        <h3 class="pt-5"><b>친구의 브레이니 MBTI는?</b></h2>
+        <div class="resultname">
+            <p>
+                ESTP-A<br><h3><b>믿음직한 강남의 협업자</b></h3>
+            </p>
+        </div>
+        <div id="resultImg" class="img-fluid my-3 col-lg-6 col-md-8 col-sm-10 col- mx-auto" width="50%">
+            <img src="../img/image-24.png" alt="24" class="img-fluid">
+        </div>
+        <div class="resultDesc">
+            <p>
+                E (Extrovert) : 외향적<br>S (South) : 강북보단 강남을 선호<br>T (True) : 솔직한 플레이 추구<br>P (Ppak) : 빡겜 선호<br>A (Alcohol) : 술 마시는 걸 선호
+            </p>
+        </div>
+        <script type="text/javascript">
+            function moveHome() {
+                location.href = "/index.html";
+            }
+        </script>
+        <button type="button" class="gohome mt-4 py-3 px-5" style="font-size: 20px;" onclick="js:moveHome()"><b>나도 하러가기</b></button>
+    </section>
+</body>
+</html>
