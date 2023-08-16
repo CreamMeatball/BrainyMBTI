@@ -24,32 +24,41 @@
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="../js/result.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
 </head>
 <body>
-    <section id="shareResult" class="mx-auto my-5 py-5 px-3">
-        <h3 class="pt-5"><b>친구의 브레이니 MBTI는?</b></h2>
+    <div id="title" class="mx-auto">
+        <img src="../img/home.png" id="homeLogo" alt="mainImage" class="img-fluid" style="float: left; margin-left: 20px;"
+        onclick="js:moveHome()">
+        <h4>TBTI - 더 브레이니 성향 검사</h4>
+    </div>
+    <section id="shareResult" class="mx-auto my-4 py-5 px-3">
+        <input type="hidden" id="resultOrder" value="7"> <!-- 순서 표시 -->
+        <h4 class="pt-5"><b>친구의 브레이니 MBTI는?</b></h4>
         <div class="resultname">
-            <p>
-                INFJ-N<br><h3><b>다채로운 강북의 도전자</b></h3>
-            </p>
+
         </div>
         <div id="resultImg" class="img-fluid my-3 col-lg-6 col-md-8 col-sm-10 col- mx-auto" width="50%">
-            <img src="../img/image-7.png" alt="7" class="img-fluid">
+
         </div>
         <div class="resultDesc">
-            <p>
-                I (Introvert) : 내향적<br>N (North) : 강남보단 강북을 선호<br>F (False) : 거짓 섞인 플레이 추구<br>J (Jeul) : 즐겜 선호<br>N (Non-Alcohol) : 술 마시지 않는 걸 선호
-            </p>
+
         </div>
         <script type="text/javascript">
             function moveHome() {
                 location.href = "/index.html";
             }
         </script>
-        <button type="button" class="gohome mt-4 py-3 px-5" style="font-size: 20px;" onclick="js:moveHome()"><b>나도 하러가기</b></button>
+        <button type="button" class="gohome mt-4 py-3 px-5" onclick="js:moveHome()"><b>나도 하러가기</b></button>
     </section>
+    <div class="bottomBar mx-auto">
+        <div id="bottomBar1"><p style="font-size: 12px;">[TBTI - The Brainy Type Indicator] 더 브레이니 성향 검사</p></div>
+        <div id="bottomBar2"><p style="font-size: 12px;">기획: 1기 김경린 / 개발: 5기 박철현 / 디자인: 1기 이준호</p></div>
+    </div>
 </body>
 </html>

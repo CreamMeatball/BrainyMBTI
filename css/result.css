@@ -30,6 +30,7 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.0, 0.2, 0.6, 1.0);
+    font-size: 15px;
 }
 
 .kakao:hover, .kakao:focus {
@@ -40,6 +41,7 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.0, 0.2, 0.6, 1.0);
+    font-size: 15px;
 }
 
 .gohome {
@@ -50,6 +52,7 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.0, 0.2, 0.6, 1.0);
+    font-size: 15px;
 }
 
 .gohome:hover, .gohome:focus {
@@ -60,4 +63,5 @@
     border-radius: 10px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.0, 0.2, 0.6, 1.0);
+    font-size: 15px;
 }
